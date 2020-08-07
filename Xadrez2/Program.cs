@@ -1,17 +1,17 @@
 ﻿using System;
-using Xadrez2.Tabuleiro;
 
-namespace Xadrez2
+namespace tabuleiro
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Posicao p;
+            
 
-            p = new Posicao(3, 4);
+            Tabuleiro tab = new Tabuleiro(8, 8);
 
-            Console.WriteLine(p);
+            Tela.ImprimirTabuleiro(tab);
+            
         }
     }
 }
