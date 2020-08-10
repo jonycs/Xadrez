@@ -7,22 +7,18 @@ namespace tabuleiro
     {
         static void Main(string[] args)
         {
-            PosicaoXadrez pos = new PosicaoXadrez('c', 7);
-            Console.WriteLine(pos);
-            Console.WriteLine(pos.ToPosicao());
-
-
             try
             {
 
 
                 Tabuleiro tab = new Tabuleiro(8, 8);
 
-                tab.ColocarPeca(new Torre(tab, Cor.Black), new Posicao(0, 3));
                 tab.ColocarPeca(new Torre(tab, Cor.Black), new Posicao(0, 0));
                 tab.ColocarPeca(new Torre(tab, Cor.Black), new Posicao(1, 3));
-                tab.ColocarPeca(new Rei(tab, Cor.Black), new Posicao(2, 4));
-
+                tab.ColocarPeca(new Rei(tab, Cor.Black), new Posicao(0, 2));
+                tab.ColocarPeca(new Torre(tab, Cor.White), new Posicao(3, 5));
+                tab.ColocarPeca(new Torre(tab, Cor.White), new Posicao(4, 5));
+                tab.ColocarPeca(new Rei(tab, Cor.White), new Posicao(5, 2));
 
                 Tela.ImprimirTabuleiro(tab);
             }
