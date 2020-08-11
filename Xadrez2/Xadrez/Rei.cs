@@ -6,7 +6,6 @@ namespace Xadrez
     {
         public Rei(Tabuleiro tab, Cor cor) : base(cor, tab)
         {
-
         }
 
         public override string ToString()
@@ -32,8 +31,6 @@ namespace Xadrez
             {
                 mat[pos.Linha, pos.Coluna] = true;
             }
-
-            
 
             //ABAIXO
             pos.DefinirValores(Posicao.Linha + 1, Posicao.Coluna);

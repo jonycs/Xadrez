@@ -61,7 +61,7 @@ namespace tabuleiro
             }
             else
             {
-                if (peca.Cor == Cor.White)
+                if (peca.Cor == Cor.Branca)
                 {
                     Console.Write(peca);
                 }

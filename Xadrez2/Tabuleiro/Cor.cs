@@ -2,7 +2,7 @@
 {
     enum Cor : int
     {
-        Black,
-        White
+        Preta,
+        Branca
     }
 }
